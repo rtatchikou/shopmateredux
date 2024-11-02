@@ -1,10 +1,8 @@
-import { useSelector } from "react-redux";
 import { useDispatch } from "react-redux";
 import { remove } from "../store/cartSlice";
 import "./CartCard.css";
 
 export const CartCard = ({ product }) => {
-  const products = useSelector((state) => state.cartState.cartList);
   const { name, price, image } = product;
 
   const dispatch = useDispatch();
